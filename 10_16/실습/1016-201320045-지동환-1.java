@@ -1,0 +1,25 @@
+package exercise;
+
+import java.util.Scanner;
+
+public class Exercise_01 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner s = new Scanner(System.in);
+		
+		System.out.print("첫 번쨰 수: ");
+		int i = s.nextInt();
+		
+		System.out.print("두 번쨰 수: ");
+		int j = s.nextInt();
+		
+		try {
+			System.out.println(i/j);
+		}
+		catch(ArithmeticException e) {
+			System.out.println("0으로 나누기 오류 발생");
+		}
+	}
+
+}
